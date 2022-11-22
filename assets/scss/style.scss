@@ -1,173 +1,76 @@
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1440px) {
+
     body {
         font-family: "Fraunces";
         text-align: justify;
-        max-width: 50vw;
-        margin: 0 auto;
+        box-sizing: border-box;
+        width: 100%;
+        place-items: center;
     }
 
     .container {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto auto;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "header"
-            "upper"
-            "middle"
-            "lower";
-        place-items: center;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-    }
+        box-sizing: border-box;
 
-    .header {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1.5fr 0.8fr 1.2fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            ". orange ."
-            ". egg ."
-            ". brand .";
-        grid-area: header;
+        .fake_header {
+            background-color: black;
+            height: 10vh;
+            margin-bottom: -5px;
 
-        img {
-            width: 100%;
+            img[alt="logo"] {
+                position: relative;
+                top: 20%;
+                left: 3%;
+                width: 25vw;
+            }
         }
-    }
 
-    .orange {
-        grid-area: orange;
-    }
+        .header {
+            background-image: url(../images/photos/image-header.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 110vw;
+            width: 100%;
 
-    .egg {
-        grid-area: egg;
-    }
+            .slogan {
+                width: 100%;
+                position: relative;
+                left: 3.2vw;
+                right: 3.2vw;
+                top: 0vh;
+                line-height: 6.576vh;
+                margin-bottom: 500px;
 
-    .brand {
-        grid-area: brand;
-    }
+                font: {
+                    family: "Fraunces";
+                    weight: 900;
+                    size: 6vw;
+                }
 
-    .upper {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.5fr 1.2fr 1.2fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            ". glass ."
-            ". audience ."
-            ". graphic_design .";
-        grid-area: upper;
-    }
 
-    .glass {
-        grid-area: glass;
-    }
 
-    .audience {
-        grid-area: audience;
-    }
+                text-transform: uppercase;
+                text-align: center;
+                color: white;
+                position: relative;
+                top: 12vw;
+                letter-spacing: 1.2vw;
 
-    .graphic_design {
-        grid-area: graphic_design;
-    }
+            }
 
-    .middle {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            ". orange_full ."
-            ". testimony1 ."
-            ". testimony2 .";
-        grid-area: middle;
-    }
+            .orange {
 
-    .orange_full {
-        grid-area: orange_full;
-    }
+                img {
+                    height: 90%;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                    position: absolute;
+                }
+            }
+        }
 
-    .testimony1 {
-        grid-area: testimony1;
     }
-
-    .testimony2 {
-        grid-area: testimony2;
-    }
-
-    .lower {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1.5fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            ". testimony3 ."
-            ". patchwork ."
-            ". footer .";
-        grid-area: lower;
-    }
-
-    .testimony3 {
-        grid-area: testimony3;
-    }
-
-    .patchwork {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "milk orange3"
-            "cornetto sugar";
-        grid-area: patchwork;
-    }
-
-    .milk {
-        grid-area: milk;
-    }
-
-    .orange3 {
-        grid-area: orange3;
-    }
-
-    .sugar {
-        grid-area: sugar;
-    }
-
-    .cornetto {
-        grid-area: cornetto;
-    }
-
-    .footer {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "logo_bottom"
-            "nav_bottom"
-            "nav_socials";
-        grid-area: footer;
-    }
-
-    .logo_bottom {
-        grid-area: logo_bottom;
-    }
-
-    .nav_bottom {
-        grid-area: nav_bottom;
-    }
-
-    .nav_socials {
-        grid-area: nav_socials;
-    }
-
 }
