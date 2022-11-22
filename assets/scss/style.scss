@@ -1,12 +1,16 @@
+$titles: "Fraunces";
+$p: "Barlow";
+
 @media screen and (max-width: 1440px) {
 
     body {
-        font-family: "Fraunces";
+        font-family: $titles;
         text-align: justify;
         box-sizing: border-box;
-        width: 100%;
+        width: 100vw;
         place-items: center;
         justify-content: center;
+        font-size: 2.6667vw;
     }
 
     .container {
@@ -17,9 +21,9 @@
         box-sizing: border-box;
 
         .fake_header {
-            background-color: rgb(62,191,255);
-            height: 10vh;
-            margin-bottom: -2vh;
+            background-color: rgb(62, 191, 255);
+            height: 20vh;
+            margin-bottom: -2vw;
 
             img[alt="logo"] {
                 position: relative;
@@ -34,8 +38,9 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            background-clip: content-box;
             height: 105vw;
-            width: 100%;
+            width: 100vw;
             align-items: center;
 
             .slogan {
@@ -52,19 +57,29 @@
                 text-transform: uppercase;
                 text-align: center;
                 color: white;
-                top: 12vw;
+                margin-top: -7vw;
                 letter-spacing: 1.2vw;
 
                 img[alt="arrow"] {
-                    height: 20vh;
-                    margin-top: 7vh;
-
+                    height: 20vw;
+                    margin-top: 7vw;
+                    position: relative;
                 }
 
             }
-
-            
         }
 
+       
+
+    }
+    .egg {
+        img {
+            height: 60vw;
+            width: 100vw;
+            object-fit: cover;
+            margin-bottom: 0;
+            
+        }
     }
 }
+
