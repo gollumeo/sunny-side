@@ -1,0 +1,115 @@
+@media screen and (min-width: 480px) {
+  .container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "header" "upper" "middle" "lower";
+  }
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 0.8fr 1.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". orange ." ". egg ." ". brand .";
+    grid-area: header;
+  }
+  .orange {
+    grid-area: orange;
+  }
+  .egg {
+    grid-area: egg;
+  }
+  .brand {
+    grid-area: brand;
+  }
+  .upper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.2fr 1.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". glass ." ". audience ." ". graphic_design .";
+    grid-area: upper;
+  }
+  .glass {
+    grid-area: glass;
+  }
+  .audience {
+    grid-area: audience;
+  }
+  .graphic_design {
+    grid-area: graphic_design;
+  }
+  .middle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". orange_full ." ". testimony1 ." ". testimony2 .";
+    grid-area: middle;
+  }
+  .orange_full {
+    grid-area: orange_full;
+  }
+  .testimony1 {
+    grid-area: testimony1;
+  }
+  .testimony2 {
+    grid-area: testimony2;
+  }
+  .lower {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: ". testimony3 ." ". patchwork ." ". footer .";
+    grid-area: lower;
+  }
+  .testimony3 {
+    grid-area: testimony3;
+  }
+  .patchwork {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "milk orange3" "cornetto sugar";
+    grid-area: patchwork;
+  }
+  .milk {
+    grid-area: milk;
+  }
+  .orange3 {
+    grid-area: orange3;
+  }
+  .sugar {
+    grid-area: sugar;
+  }
+  .cornetto {
+    grid-area: cornetto;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "logo_bottom" "nav_bottom" "nav_socials";
+    grid-area: footer;
+  }
+  .logo_bottom {
+    grid-area: logo_bottom;
+  }
+  .nav_bottom {
+    grid-area: nav_bottom;
+  }
+  .nav_socials {
+    grid-area: nav_socials;
+  }
+}/*# sourceMappingURL=style.css.map */
