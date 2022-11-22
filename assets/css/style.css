@@ -5,17 +5,19 @@
     box-sizing: border-box;
     width: 100%;
     place-items: center;
+    justify-content: center;
   }
   .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    vertical-align: center;
     box-sizing: border-box;
   }
   .container .fake_header {
-    background-color: black;
+    background-color: rgb(62, 191, 255);
     height: 10vh;
-    margin-bottom: -5px;
+    margin-bottom: -2vh;
   }
   .container .fake_header img[alt=logo] {
     position: relative;
@@ -28,31 +30,25 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 110vw;
+    height: 105vw;
     width: 100%;
+    align-items: center;
   }
   .container .header .slogan {
     width: 100%;
-    position: relative;
-    left: 3.2vw;
-    right: 3.2vw;
-    top: 0vh;
-    line-height: 6.576vh;
-    margin-bottom: 500px;
+    margin-top: 5vh;
+    line-height: 11vh;
     font-family: "Fraunces";
     font-weight: 900;
     font-size: 6vw;
     text-transform: uppercase;
     text-align: center;
     color: white;
-    position: relative;
     top: 12vw;
     letter-spacing: 1.2vw;
   }
-  .container .header .orange img {
-    height: 90%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    position: absolute;
+  .container .header .slogan img[alt=arrow] {
+    height: 20vh;
+    margin-top: 7vh;
   }
 }/*# sourceMappingURL=style.css.map */
