@@ -1,9 +1,10 @@
-body {
-  font-family: "Fraunces";
-  text-align: justify;
-}
-
 @media screen and (min-width: 480px) {
+  body {
+    font-family: "Fraunces";
+    text-align: justify;
+    max-width: 50vw;
+    margin: 0 auto;
+  }
   .container {
     display: grid;
     grid-template-columns: 100%;
@@ -11,6 +12,8 @@ body {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "header" "upper" "middle" "lower";
+    place-items: center;
+    justify-content: center;
   }
   .header {
     display: grid;
@@ -20,6 +23,9 @@ body {
     grid-auto-flow: row;
     grid-template-areas: ". orange ." ". egg ." ". brand .";
     grid-area: header;
+  }
+  .header img {
+    width: 100%;
   }
   .orange {
     grid-area: orange;
