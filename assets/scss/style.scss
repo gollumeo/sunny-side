@@ -2,11 +2,20 @@ $titles: 'Fraunces', serif;
 $p: 'Barlow', sans-serif;
 $greyish: #24303E;
 $light-greyish: #808397;
+$dark-greenish: #24554A;
+$dark-blueish: #052C3B;
+$light-blueish: #19536C;
+$light-grey: #A7AAAD;
+$testimony: #5B636D;
+$footer-bg: #90D4C6;
+$footer-links: #458D7E;
+
 * {
     margin: 0;
     padding: 0;
 }
-@media screen and (min-width: 280px) and (max-width: 700px) {
+
+@media screen and (min-width: 280px) and (max-width: 768px) {
     body {
         font-family: $titles;
         text-align: justify;
@@ -16,6 +25,7 @@ $light-greyish: #808397;
         width: 98vw;
         margin: 0 1vw;
     }
+
     .container {
         display: flex;
         flex-direction: column;
@@ -23,24 +33,29 @@ $light-greyish: #808397;
         place-content: center;
         vertical-align: center;
         width: 100%;
+
         .learn_more {
             margin-top: calc(10px + 5vw);
+
             a {
                 text-decoration: none;
                 font-family: $titles;
                 font-weight: 900;
                 text-transform: uppercase;
                 color: #24303E;
-                font-size: 0.9em;
+                font-size: 4.5vw;
             }
+
             &:visited {
                 color: #24303E;
             }
         }
+
         .fake_header {
             background-color: rgb(62, 191, 255);
             height: calc(25px + 7vh);
             margin-top: 0;
+
             img[alt="logo"] {
                 position: relative;
                 top: 20%;
@@ -48,6 +63,7 @@ $light-greyish: #808397;
                 width: calc(25vw + 1em);
             }
         }
+
         .header {
             background-image: url(../images/photos/image-header.jpg);
             background-repeat: no-repeat;
@@ -58,20 +74,24 @@ $light-greyish: #808397;
             width: 100%;
             align-items: center;
             margin-top: -1%;
+
             .slogan {
                 width: 100%;
                 padding-top: calc(1.2em + .5vh);
                 line-height: calc(1em + 5vh);
+
                 font: {
                     family: $titles;
                     weight: 900;
                     size: calc(10px + 3vw);
                 }
+
                 text-transform: uppercase;
                 text-align: center;
                 color: white;
                 margin-top: -7vw;
                 letter-spacing: 1.2vw;
+
                 img[alt="arrow"] {
                     height: 25vw;
                     position: relative;
@@ -79,6 +99,7 @@ $light-greyish: #808397;
                 }
             }
         }
+
         .egg {
             img {
                 height: 60vw;
@@ -87,37 +108,230 @@ $light-greyish: #808397;
                 margin-bottom: 0;
             }
         }
+
         .brand {
             text-align: center;
             margin: 0 auto;
             width: 90vw;
             padding-top: 10vw;
             padding-bottom: calc(5px + 10vw);
+
             h1 {
                 color: #24303E;
-                font-size: 2rem;
                 font-weight: 900;
-                font-size: calc(16px + 1em);
+                font-size: calc(10px + 8vw);
             }
+
             p {
                 font-family: $p;
                 font-weight: 600;
                 color: #808397;
-                padding-top: calc(10px + 2.2vw);
-                line-height: 1.875rem;
+                padding-top: 5vw;
+                line-height: 7vw;
+                font-size: calc(8px + 3vw);
             }
         }
+
         .glass {
-            img {
-                height: 60vw;
-                width: 100%;
-                object-fit: cover;
-                margin-bottom: 0;
-            }
+            @extend .egg;
         }
+
         .audience {
             @extend .brand;
             text-align: center;
+        }
+
+        .graphic_design {
+            background: url(../images/photos/image-graphic-design.jpg) no-repeat;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-clip: content-box;
+            height: 200vw;
+            width: 98vw;
+            align-items: center;
+            margin-top: -1%;
+
+            h1 {
+                position: relative;
+                top: 110vw;
+                text-align: center;
+                font-weight: 900;
+                color: $dark-greenish;
+                font-size: calc(10px + 8vw);
+            }
+
+            p {
+                font-family: $p;
+                font-weight: 600;
+                color: $dark-greenish;
+                line-height: 7vw;
+                text-align: center;
+                margin-top: 120vw;
+                font-size: calc(8px + 3vw);
+            }
+        }
+
+        .orange_full {
+            background-image: url(../images/photos/image-photography.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-clip: content-box;
+            height: 170vw;
+            width: 98vw;
+            align-items: center;
+
+            h1 {
+                position: relative;
+                top: 100vw;
+                text-align: center;
+                font-weight: 900;
+                color: $dark-blueish;
+                font-size: calc(10px + 8vw);
+            }
+
+            p {
+                font-family: $p;
+                font-weight: 600;
+                color: $light-blueish;
+                line-height: 7vw;
+                text-align: center;
+                margin-top: 105vw;
+                font-size: calc(8px + 3vw);
+                margin-left: 2vw;
+                margin-right: 2vw;
+            }
+        }
+
+        .testimonials {
+            display: block;
+            padding-top: 15vw;
+            padding-bottom: 15vw;
+
+            h1 {
+                font-size: 5vw;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: 900;
+                color: $light-grey;
+            }
+        }
+
+
+
+        .testimony {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            place-content: center;
+            margin-bottom: 10vw;
+
+            .quote {
+                text-align: center;
+                padding: 3vw;
+
+
+                p {
+                    padding-top: 5vw;
+                    font-family: $p;
+                    color: $testimony;
+                    padding-bottom: 10vw;
+                    font-size: 4.5vw;
+                }
+
+                .name {
+                    font-size: 5vw;
+                    font-weight: 900;
+                    margin-top: -3vw;
+                }
+
+                .job {
+                    font-family: $p;
+                    font-size: 4.5vw;
+                    font-weight: 600;
+                    color: $light-grey;
+                    padding-top: 2.5vw;
+                }
+            }
+
+            img {
+                border-radius: 50%;
+                width: 30vw;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+
+        .patchwork {
+
+            display: flex;
+            flex-direction: row;
+        }
+
+        article {
+            img {
+                width: 100%;
+                height: auto;
+                margin-top: -2vw;
+            }
+        }
+
+        .footer {
+            background-color: $footer-bg;
+            margin-top: -1.5vw;
+            padding-top: 5vw;
+            height: 90vw;
+
+
+            .logo_bottom {
+                img {
+                    width: 50vw;
+                    position: relative;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    display: block;
+                }
+
+
+            }
+
+            .nav_bottom {
+                flex-direction: row;
+                place-items: center;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-top: 20vw;
+
+                & a {
+                    padding-right: 8vw;
+                    padding-left: 8vw;
+                    font: {
+                        family: $p;
+                        size: 4.5vw;
+                        weight: 600;
+                    }
+                    text-decoration: none;
+                    color: $footer-links;
+                }
+            }
+
+            .nav_socials {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-top: 15vw;
+
+                & img {
+                    padding-left: 3.5vw;
+                    padding-right: 3.5vw;
+                }
+            }
         }
     }
 }
