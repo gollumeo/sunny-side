@@ -1,30 +1,36 @@
-@media screen and (max-width: 1440px) {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 280px) and (max-width: 700px) {
   body {
     font-family: "Fraunces";
     text-align: justify;
     box-sizing: border-box;
-    width: 100vw;
     place-items: center;
-    justify-content: center;
-    font-size: 2.6667vw;
+    font-size: 18px;
+    width: 98vw;
+    margin: 0 1vw;
   }
   .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    place-content: center;
     vertical-align: center;
-    box-sizing: border-box;
+    width: 100%;
   }
   .container .fake_header {
     background-color: rgb(62, 191, 255);
-    height: 20vh;
-    margin-bottom: -2vw;
+    height: calc(25px + 7vh);
+    margin-top: 0;
   }
   .container .fake_header img[alt=logo] {
     position: relative;
     top: 20%;
     left: 3%;
-    width: 25vw;
+    width: calc(25vw + 1em);
   }
   .container .header {
     background-image: url(../images/photos/image-header.jpg);
@@ -33,13 +39,14 @@
     background-size: cover;
     background-clip: content-box;
     height: 105vw;
-    width: 100vw;
+    width: 100%;
     align-items: center;
+    margin-top: -1%;
   }
   .container .header .slogan {
     width: 100%;
-    margin-top: 5vh;
-    line-height: 11vh;
+    padding-top: calc(1.2em + 0.5vh);
+    line-height: calc(1em + 5vh);
     font-family: "Fraunces";
     font-weight: 900;
     font-size: 6vw;
@@ -50,13 +57,13 @@
     letter-spacing: 1.2vw;
   }
   .container .header .slogan img[alt=arrow] {
-    height: 20vw;
-    margin-top: 7vw;
+    height: 25vw;
     position: relative;
+    top: 5vw;
   }
-  .egg img {
+  .container .egg img {
     height: 60vw;
-    width: 100vw;
+    width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     margin-bottom: 0;
