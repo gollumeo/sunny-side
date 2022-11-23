@@ -1,13 +1,12 @@
-$titles: "Fraunces";
-$p: "Barlow";
-
+$titles: 'Fraunces', serif;
+$p: 'Barlow', sans-serif;
+$greyish: #24303E;
+$light-greyish: #808397;
 * {
     margin: 0;
     padding: 0;
 }
-
 @media screen and (min-width: 280px) and (max-width: 700px) {
-
     body {
         font-family: $titles;
         text-align: justify;
@@ -17,7 +16,6 @@ $p: "Barlow";
         width: 98vw;
         margin: 0 1vw;
     }
-
     .container {
         display: flex;
         flex-direction: column;
@@ -25,12 +23,24 @@ $p: "Barlow";
         place-content: center;
         vertical-align: center;
         width: 100%;
-
+        .learn_more {
+            margin-top: calc(10px + 5vw);
+            a {
+                text-decoration: none;
+                font-family: $titles;
+                font-weight: 900;
+                text-transform: uppercase;
+                color: #24303E;
+                font-size: 0.9em;
+            }
+            &:visited {
+                color: #24303E;
+            }
+        }
         .fake_header {
             background-color: rgb(62, 191, 255);
             height: calc(25px + 7vh);
             margin-top: 0;
-
             img[alt="logo"] {
                 position: relative;
                 top: 20%;
@@ -38,7 +48,6 @@ $p: "Barlow";
                 width: calc(25vw + 1em);
             }
         }
-
         .header {
             background-image: url(../images/photos/image-header.jpg);
             background-repeat: no-repeat;
@@ -49,24 +58,20 @@ $p: "Barlow";
             width: 100%;
             align-items: center;
             margin-top: -1%;
-
             .slogan {
                 width: 100%;
                 padding-top: calc(1.2em + .5vh);
                 line-height: calc(1em + 5vh);
-
                 font: {
-                    family: "Fraunces";
+                    family: $titles;
                     weight: 900;
-                    size: 6vw;
+                    size: calc(10px + 3vw);
                 }
-
                 text-transform: uppercase;
                 text-align: center;
                 color: white;
                 margin-top: -7vw;
                 letter-spacing: 1.2vw;
-
                 img[alt="arrow"] {
                     height: 25vw;
                     position: relative;
@@ -74,17 +79,45 @@ $p: "Barlow";
                 }
             }
         }
-
         .egg {
             img {
                 height: 60vw;
                 width: 100%;
                 object-fit: cover;
                 margin-bottom: 0;
-    
             }
         }
+        .brand {
+            text-align: center;
+            margin: 0 auto;
+            width: 90vw;
+            padding-top: 10vw;
+            padding-bottom: calc(5px + 10vw);
+            h1 {
+                color: #24303E;
+                font-size: 2rem;
+                font-weight: 900;
+                font-size: calc(16px + 1em);
+            }
+            p {
+                font-family: $p;
+                font-weight: 600;
+                color: #808397;
+                padding-top: calc(10px + 2.2vw);
+                line-height: 1.875rem;
+            }
+        }
+        .glass {
+            img {
+                height: 60vw;
+                width: 100%;
+                object-fit: cover;
+                margin-bottom: 0;
+            }
+        }
+        .audience {
+            @extend .brand;
+            text-align: center;
+        }
     }
-
-    
 }

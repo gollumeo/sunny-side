@@ -5,7 +5,7 @@
 
 @media screen and (min-width: 280px) and (max-width: 700px) {
   body {
-    font-family: "Fraunces";
+    font-family: "Fraunces", serif;
     text-align: justify;
     box-sizing: border-box;
     place-items: center;
@@ -20,6 +20,20 @@
     place-content: center;
     vertical-align: center;
     width: 100%;
+  }
+  .container .learn_more {
+    margin-top: calc(10px + 5vw);
+  }
+  .container .learn_more a {
+    text-decoration: none;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #24303E;
+    font-size: 0.9em;
+  }
+  .container .learn_more:visited {
+    color: #24303E;
   }
   .container .fake_header {
     background-color: rgb(62, 191, 255);
@@ -47,9 +61,9 @@
     width: 100%;
     padding-top: calc(1.2em + 0.5vh);
     line-height: calc(1em + 5vh);
-    font-family: "Fraunces";
+    font-family: "Fraunces", serif;
     font-weight: 900;
-    font-size: 6vw;
+    font-size: calc(10px + 3vw);
     text-transform: uppercase;
     text-align: center;
     color: white;
@@ -67,5 +81,35 @@
     -o-object-fit: cover;
        object-fit: cover;
     margin-bottom: 0;
+  }
+  .container .brand, .container .audience {
+    text-align: center;
+    margin: 0 auto;
+    width: 90vw;
+    padding-top: 10vw;
+    padding-bottom: calc(5px + 10vw);
+  }
+  .container .brand h1, .container .audience h1 {
+    color: #24303E;
+    font-size: 2rem;
+    font-weight: 900;
+    font-size: calc(16px + 1em);
+  }
+  .container .brand p, .container .audience p {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    color: #808397;
+    padding-top: calc(10px + 2.2vw);
+    line-height: 1.875rem;
+  }
+  .container .glass img {
+    height: 60vw;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 0;
+  }
+  .container .audience {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
