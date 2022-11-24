@@ -295,6 +295,7 @@ $footer-links: #458D7E;
                     right: 0;
                     margin: auto;
                     display: block;
+                    margin-top: 15vw;
                 }
 
 
@@ -306,7 +307,7 @@ $footer-links: #458D7E;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                margin-top: 20vw;
+                margin-top: 10vw;
 
                 & a {
                     padding-right: 8vw;
@@ -325,7 +326,7 @@ $footer-links: #458D7E;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
-                margin-top: 15vw;
+                margin-top: 25vw;
 
                 & img {
                     padding-left: 3.5vw;
