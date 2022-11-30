@@ -20,7 +20,7 @@
     width: 100vw;
   }
   .container .learn_more {
-    margin-top: calc(10px + 5vw);
+    margin-top: calc(8px + 5vw);
   }
   .container .learn_more a {
     text-decoration: none;
@@ -153,7 +153,7 @@
     width: 10.8vw;
     height: 0.5vw;
     border-radius: 28px;
-    background-color: #FAD400;
+    background-color: #fad400;
     bottom: 0;
     transform-origin: right;
     transform: scaleX(0);
@@ -161,6 +161,67 @@
     margin-bottom: -0.2vw;
   }
   .container .middle .brand a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  .container .upper {
+    display: flex;
+    flex-direction: row;
+  }
+  .container .upper .glass {
+    width: 50%;
+  }
+  .container .upper .glass img {
+    width: 50vw;
+    margin-top: -0.35vw;
+  }
+  .container .upper .audience {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 50%;
+    text-align: center;
+    height: auto;
+    margin-top: 10vw;
+  }
+  .container .upper .audience h1 {
+    color: #24303e;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: calc(5px + 2.5vw);
+    margin-left: 10vw;
+    text-align: left;
+    margin-right: 6vw;
+  }
+  .container .upper .audience p {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    color: #808397;
+    padding-top: 3vw;
+    line-height: 2vw;
+    font-size: calc(3px + 1vw);
+    margin-right: 5vw;
+    margin-left: 10vw;
+    margin-bottom: 1vw;
+    text-align: left;
+  }
+  .container .upper .audience a::before {
+    content: "";
+    position: absolute;
+    width: 10.8vw;
+    height: 0.5vw;
+    border-radius: 28px;
+    background-color: #fad400;
+    bottom: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: -0.2vw;
+  }
+  .container .upper .audience a:hover::before {
     transform-origin: left;
     transform: scaleX(1);
   }
