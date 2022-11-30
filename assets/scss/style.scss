@@ -340,7 +340,7 @@ $footer-links: #458d7e;
 
 @media screen and (min-width: 769px) {
   body {
-    width: 99%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     list-style: none;
@@ -354,6 +354,23 @@ $footer-links: #458d7e;
     place-content: center;
     vertical-align: center;
     width: 100vw;
+
+    .learn_more {
+      margin-top: calc(10px + 5vw);
+
+      a {
+        text-decoration: none;
+        font-family: $titles;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #24303e;
+        font-size: 1.5vw;
+      }
+
+      &:visited {
+        color: #24303e;
+      }
+    }
 
     .fake_header {
       background-color: rgb(62, 191, 255);
@@ -449,8 +466,8 @@ $footer-links: #458d7e;
       .egg {
         width: 50%;
         img {
-            width: 50vw;
-            margin-left: 50vw;
+          width: 50vw;
+          margin-left: 50vw;
         }
       }
 
@@ -459,25 +476,53 @@ $footer-links: #458d7e;
         width: 50%;
         text-align: center;
         height: auto;
-
+        margin-top: 10vw;
 
         h1 {
           color: #24303e;
           font-family: $titles;
           font-weight: 900;
-          font-size: calc(10px + 4vw);
-          margin-left: 2vw;
-          margin-right: 25vw;
+          font-size: calc(6px + 2.5vw);
+          margin-left: 10vw;
+          text-align: left;
+          margin-right: 6vw;
         }
 
         p {
           font-family: $p;
           font-weight: 600;
           color: #808397;
-          padding-top: 5vw;
-          line-height: 7vw;
-          font-size: calc(8px + 3vw);
+          padding-top: 3vw;
+          line-height: 2vw;
+          font-size: calc(4.5px + 1vw);
+          margin-right: 5vw;
+          margin-left: 10vw;
+          margin-bottom: 5vw;
+          text-align: left;
         }
+
+        a {
+          &::before {
+            content: '';
+            position: absolute;
+            width: 10.8vw;
+            height: .5vw;
+            border-radius: 28px;
+            background-color: #FAD400;
+            bottom: 0;
+            // left: calc(50% - 65px);
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .3s ease-in-out;
+            margin-bottom: -.2vw;
+          }
+
+          &:hover::before {
+            transform-origin: left;
+            transform: scaleX(1);
+          }
+        }
+
       }
     }
   }
