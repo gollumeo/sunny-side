@@ -359,6 +359,7 @@ $footer-links: #458d7e;
       margin-top: calc(8px + 5vw);
 
       a {
+        z-index: 999;
         text-decoration: none;
         font-family: $titles;
         font-weight: 900;
@@ -570,19 +571,19 @@ $footer-links: #458d7e;
         }
 
         a {
+
           &::before {
             content: "";
             position: absolute;
             width: 10.8vw;
             height: 0.5vw;
             border-radius: 28px;
-            background-color: #fad400;
-            bottom: 0;
+            background-color: #FE7766;
             // left: calc(50% - 65px);
             transform-origin: right;
             transform: scaleX(0);
             transition: transform 0.3s ease-in-out;
-            margin-bottom: -0.2vw;
+            margin-top: 1.5vw;
           }
 
           &:hover::before {

@@ -23,6 +23,7 @@
     margin-top: calc(8px + 5vw);
   }
   .container .learn_more a {
+    z-index: 999;
     text-decoration: none;
     font-family: "Fraunces", serif;
     font-weight: 900;
@@ -214,12 +215,11 @@
     width: 10.8vw;
     height: 0.5vw;
     border-radius: 28px;
-    background-color: #fad400;
-    bottom: 0;
+    background-color: #FE7766;
     transform-origin: right;
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
-    margin-bottom: -0.2vw;
+    margin-top: 1.5vw;
   }
   .container .upper .audience a:hover::before {
     transform-origin: left;
